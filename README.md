@@ -168,13 +168,12 @@ Desenvolvimento Local ──(SCP)──→ AWS EC2 ──(Docker)──→ Inter
 
 ### Aplicação Final 
 
-![AWS EC2] <img width="1673" height="311" alt="01" src="https://github.com/user-attachments/assets/fd34cf3b-045c-4698-b51b-45ec5f34c55a" />
+<img width="500" height="200" alt="01" src="https://github.com/user-attachments/assets/fd34cf3b-045c-4698-b51b-45ec5f34c55a" />
 
 **URL de Produção Ativa:** http://35.88.162.245:8080
 
 **Página HTML Renderizada:** A aplicação apresenta uma Landing Page de apresentação pessoal com design responsivo e informações técnico-profissionais organizadas.
 
-![Aplicação Web em Produção] ![index](https://github.com/user-attachments/assets/2afba187-32ec-44c4-9499-11e692d0704a)
 
 *Aplicação Web em Produção: Captura da aplicação funcionando na AWS, mostrando a página HTML.*
 
