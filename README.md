@@ -139,8 +139,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 <br>
 
-**Deploy da Aplicação na AWS:** Execução final do Docker Compose na instância EC2, mostrando o download da imagem Apache e a inicialização bem-sucedida do container em produção.
-
 ```bash
 [ec2-user@ip-172-31-29-241 docker-projeto1-dio]$ docker-compose up -d
 [+] Running 7/7
