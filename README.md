@@ -174,8 +174,6 @@ Desenvolvimento Local ──(SCP)──→ AWS EC2 ──(Docker)──→ Inter
 **Página HTML Renderizada:** A aplicação apresenta uma Landing Page de apresentação pessoal com design responsivo e informações técnico-profissionais organizadas.
 
 
-*Aplicação Web em Produção: Captura da aplicação funcionando na AWS, mostrando a página HTML.*
-
 ### Comparação de Implementações
 
 | Aspecto         | Exercício Básico  | Implementação AWS  |
