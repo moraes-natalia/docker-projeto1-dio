@@ -26,7 +26,7 @@ Utilização de **Docker + AWS EC2 + Security Groups** como stack completa de pr
 
 ## Arquitetura da Solução
 
-![MermaidChart]<img width="3840" height="541" alt="Untitled diagram _ Mermaid Chart-2025-08-23-184554" src="https://github.com/user-attachments/assets/67316055-71a9-4f8a-b3a1-9c70f5875de1" />
+<img width="3840" height="541" alt="Untitled diagram _ Mermaid Chart-2025-08-23-184554" src="https://github.com/user-attachments/assets/67316055-71a9-4f8a-b3a1-9c70f5875de1" />
 
 
 ## Tecnologias Utilizadas
@@ -167,8 +167,7 @@ Desenvolvimento Local ──(SCP)──→ AWS EC2 ──(Docker)──→ Inter
 ## Resultados Alcançados
 
 ### Aplicação Final 
-
-<img width="500" height="200" alt="01" src="https://github.com/user-attachments/assets/fd34cf3b-045c-4698-b51b-45ec5f34c55a" />
+<img width="1673" height="311" alt="01" src="https://github.com/user-attachments/assets/1070601c-f17e-42a6-bc6e-ddfb15f53233" />
 
 **URL de Produção Ativa:** http://35.88.162.245:8080
 
