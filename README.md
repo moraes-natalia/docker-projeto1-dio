@@ -98,7 +98,6 @@ A implementação avançada incluiu deploy real na nuvem AWS:
 - **IP Público**: 35.88.162.245
 
 <br>
-
 ### Transferência de Arquivos via SCP
 
 Demonstração do processo de transferência dos arquivos do projeto local para a instância EC2 usando protocolo SCP seguro:
