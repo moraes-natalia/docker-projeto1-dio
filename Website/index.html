@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk README</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #001100 50%, #002200 100%);
+            color: #00ff41;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Natalia'says: Welcome to my code. Design color-section - Matrix grid background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: gridMove 15s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes gridMove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        /* Matrix glitch effect for main title */
+        .glitch {
+            font-family: 'Orbitron', monospace;
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            color: #00ff41;
+            text-shadow:
+                0 0 10px #00ff41,
+                0 0 20px #00ff41,
+                0 0 30px #00ff41,
+                2px 2px 0 #003d10;
+            animation: matrixGlitch 3s infinite;
+        }
+
+        @keyframes matrixGlitch {
+
+            0%,
+            85%,
+            100% {
+                transform: translate(0);
+                color: #00ff41;
+                text-shadow:
+                    0 0 10px #00ff41,
+                    0 0 20px #00ff41,
+                    0 0 30px #00ff41,
+                    2px 2px 0 #003d10;
+            }
+
+            5% {
+                transform: translate(-3px, -2px);
+                color: #00aa2b;
+                text-shadow:
+                    0 0 15px #00aa2b,
+                    3px 3px 0 #004d15;
+            }
+
+            10% {
+                transform: translate(3px, 2px);
+                color: #66ff66;
+                text-shadow:
+                    0 0 15px #66ff66,
+                    -3px -3px 0 #003d10;
+            }
+
+            15% {
+                transform: translate(-2px, -3px);
+            }
+
+            20% {
+                transform: translate(2px, 3px);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            text-align: center;
+            color: #39ff14;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 15px #39ff14;
+            animation: matrixPulse 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes matrixPulse {
+            from {
+                text-shadow:
+                    0 0 10px #39ff14,
+                    0 0 20px #39ff14;
+            }
+
+            to {
+                text-shadow:
+                    0 0 20px #39ff14,
+                    0 0 30px #39ff14,
+                    0 0 40px #39ff14,
+                    0 0 60px #00ff41;
+            }
+        }
+
+        .cyber-section {
+            background: rgba(0, 20, 0, 0.9);
+            border: 2px solid #00ff41;
+            border-radius: 10px;
+            margin: 2rem 0;
+            padding: 2rem;
+            position: relative;
+            backdrop-filter: blur(10px);
+            box-shadow:
+                0 0 25px rgba(0, 255, 65, 0.4),
+                inset 0 0 25px rgba(0, 255, 65, 0.1);
+            animation: matrixBorderGlow 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes matrixBorderGlow {
+            0% {
+                border-color: #00ff41;
+                box-shadow:
+                    0 0 25px rgba(0, 255, 65, 0.4),
+                    inset 0 0 25px rgba(0, 255, 65, 0.1);
+            }
+
+            100% {
+                border-color: #39ff14;
+                box-shadow:
+                    0 0 35px rgba(57, 255, 20, 0.6),
+                    inset 0 0 35px rgba(57, 255, 20, 0.2);
+            }
+        }
+
+
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 2rem;
+            color: #00ff41;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            text-shadow: 0 0 15px #00ff41;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #00ff41, #39ff14, transparent);
+            animation: matrixLineExpand 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes matrixLineExpand {
+            0% {
+                width: 0%;
+                opacity: 0.5;
+            }
+
+            100% {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        .competency-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(0, 255, 65, 0.08);
+            border-left: 4px solid #39ff14;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .competency-item:hover {
+            background: rgba(57, 255, 20, 0.15);
+            border-left-color: #00ff41;
+            transform: translateX(15px);
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+
+        .competency-title {
+            font-weight: 700;
+            color: #39ff14;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 8px #39ff14;
+        }
+
+        .competency-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #b3ffb3;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tech-category {
+            background: rgba(57, 255, 20, 0.08);
+            border: 1px solid #39ff14;
+            border-radius: 10px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.3), transparent);
+            animation: matrixSweep 4s infinite;
+        }
+
+        @keyframes matrixSweep {
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        .tech-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.3rem;
+            color: #39ff14;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 8px #39ff14;
+        }
+
+        .tech-items {
+            font-family: 'Orbitron', monospace;
+            font-size: 1rem;
+            color: #00ff41;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            text-shadow: 0 0 5px #00ff41;
+        }
+
+        .stats-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            background: rgba(0, 30, 0, 0.9);
+            border: 2px solid #00ff41;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #00ff41, #39ff14, #00ff41);
+            animation: matrixTopLine 3s linear infinite;
+        }
+
+        @keyframes matrixTopLine {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .linkedin-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: rgba(0, 255, 65, 0.2);
+            color: #00ff41;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid #00ff41;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+            margin: 0.5rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .linkedin-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-link:hover::before {
+            left: 100%;
+        }
+
+        .linkedin-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px rgba(0, 255, 65, 0.8);
+            background: rgba(57, 255, 20, 0.3);
+            border-color: #39ff14;
+        }
+
+        .approach-highlight {
+            font-style: italic;
+            color: #39ff14;
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px dashed #39ff14;
+            border-radius: 10px;
+            text-shadow: 0 0 8px #39ff14;
+            animation: matrixPulse2 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes matrixPulse2 {
+            0% {
+                opacity: 0.7;
+                border-color: #39ff14;
+            }
+
+            100% {
+                opacity: 1;
+                border-color: #00ff41;
+                box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+            }
+        }
+
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #00ff41;
+            border-radius: 50%;
+            animation: matrixFloat 25s linear infinite;
+            box-shadow: 0 0 4px #00ff41;
+        }
+
+        @keyframes matrixFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .glitch {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.4rem;
+            }
+
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <div
+            style="text-align: center; margin-bottom: 1rem; font-size: 1.4rem; color: #39ff14; text-shadow: 0 0 8px #39ff14;">
+            Hi, I'm</div>
+        <h1 class="glitch">NATALIA MORAES</h1>
+        <p class="subtitle">Project Management Professional & Programming Enthusiast</p>
+
+        <div class="cyber-section">
+            <p style="font-size: 1.2rem; line-height: 1.8; text-align: justify;">
+                With over a decade of management experience spanning technology and diverse industry sectors, I
+                specialize in translating complex business requirements into scalable technical solutions. My approach
+                integrates strategic planning, data-driven analysis, and systematic problem-solving to deliver
+                measurable business outcomes.
+            </p>
+        </div>
+
+        <h2 class="section-title">Core Competencies</h2>
+
+        <div class="competency-item">
+            <div class="competency-title">Strategic Project Leadership</div>
+            <div class="competency-desc">Transforming operational challenges into strategic opportunities through
+                methodical planning and agile execution frameworks</div>
+        </div>
+
+        <div class="competency-item">
+            <div class="competency-title">Technology Integration</div>
+            <div class="competency-desc">Bridging management strategy with technical implementation to architect
+                innovative, scalable solutions</div>
+        </div>
+
+        <div class="competency-item">
+            <div class="competency-title">Continuous Development</div>
+            <div class="competency-desc">Advancing expertise across project methodologies, software engineering
+                principles, and cross-functional team collaboration</div>
+        </div>
+
+        <h2 class="section-title">Professional Focus</h2>
+        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
+            I'm committed to becoming a skilled developer, building expertise in software development to create
+            scalable, effective solutions that align with business goals. My extensive project management background
+            provides a strategic foundation for understanding how technology serves business objectives and user needs.
+        </p>
+
+        <div class="approach-highlight">
+            Approach: Begin with precise problem definition to ensure solution relevance and effectiveness.
+        </div>
+
+        <h2 class="section-title">Technology Stack</h2>
+
+        <div class="tech-grid">
+            <div class="tech-category">
+                <div class="tech-title">Development & Infrastructure</div>
+                <div class="tech-items">
+                    C# • .NET Framework • AWS Cloud Services • Docker Containerization
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <div class="tech-title">Frontend Technologies</div>
+                <div class="tech-items">
+                    React • JavaScript • HTML5 • CSS3
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <div class="tech-title">Data Management & Quality Assurance</div>
+                <div class="tech-items">
+                    SQL • Database Design • Quality Assurance Testing • Test Automation
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="tech-category">
+                <div class="tech-title">Professional Network</div>
+                <div style="text-align: center; margin-top: 1rem;">
+                    <a href="https://github.com/moraes-natalia" class="linkedin-link" target="_blank">
+                        GitHub 🐙
+                    </a>
+                    <a href="https://www.linkedin.com/in/moraesnatalia/" class="linkedin-link" target="_blank">
+                        LinkedIn 💼
+                    </a>
+                    <a href="mailto:natalia.m@outlook.com.br" class="linkedin-link" target="_blank">
+                        Email 📧
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Create Matrix-style floating particles
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 25 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 15) + 's';
+
+                // Random Matrix green variations
+                const greenShades = ['#00ff41', '#39ff14', '#00cc33', '#66ff66'];
+                particle.style.background = greenShades[Math.floor(Math.random() * greenShades.length)];
+                particle.style.boxShadow = `0 0 4px ${particle.style.background}`;
+
+                document.getElementById('particles').appendChild(particle);
+
+                setTimeout(() => {
+                    particle.remove();
+                }, 25000);
+            }
+
+            // Create Matrix particles periodically
+            setInterval(createParticle, 300);
+
+            // Add some initial particles
+            for (let i = 0; i < 15; i++) {
+                setTimeout(createParticle, i * 80);
+            }
+
+            // Add Matrix-style typing effect to competency titles
+            const competencyTitles = document.querySelectorAll('.competency-title');
+
+            competencyTitles.forEach((title, index) => {
+                const text = title.textContent;
+                title.textContent = '';
+
+                setTimeout(() => {
+                    let i = 0;
+                    const typeInterval = setInterval(() => {
+                        // Add Matrix-style random character flickering
+                        if (Math.random() < 0.1) {
+                            const randomChar = String.fromCharCode(0x30A0 + Math.random() * 96);
+                            title.textContent = text.substring(0, i) + randomChar;
+                            setTimeout(() => {
+                                title.textContent = text.substring(0, i + 1);
+                                i++;
+                                if (i >= text.length) {
+                                    clearInterval(typeInterval);
+                                }
+                            }, 50);
+                        } else {
+                            title.textContent += text[i];
+                            i++;
+                            if (i >= text.length) {
+                                clearInterval(typeInterval);
+                            }
+                        }
+                    }, 80);
+                }, index * 1200);
+            });
+
+            // Add Matrix-style hover effects to cyber sections
+            const cyberSections = document.querySelectorAll('.cyber-section');
+
+            cyberSections.forEach(section => {
+                section.addEventListener('mouseenter', () => {
+                    section.style.transform = 'scale(1.02)';
+                    section.style.transition = 'transform 0.3s ease';
+                    section.style.boxShadow = '0 0 50px rgba(0, 255, 65, 0.6), inset 0 0 50px rgba(0, 255, 65, 0.2)';
+                });
+
+                section.addEventListener('mouseleave', () => {
+                    section.style.transform = 'scale(1)';
+                    section.style.boxShadow = '';
+                });
+            });
+
+            // Add hover effects to section titles
+            const sectionTitles = document.querySelectorAll('.section-title');
+            sectionTitles.forEach(title => {
+                title.addEventListener('mouseenter', () => {
+                    title.style.textShadow = '0 0 20px #00ff41, 0 0 30px #00ff41';
+                    title.style.transform = 'scale(1.05)';
+                    title.style.transition = 'all 0.3s ease';
+                });
+
+                title.addEventListener('mouseleave', () => {
+                    title.style.textShadow = '0 0 15px #00ff41';
+                    title.style.transform = 'scale(1)';
+                });
+            });
+
+            // Add Matrix rain effect
+            function createMatrixRain() {
+                const matrixContainer = document.createElement('div');
+                matrixContainer.style.position = 'fixed';
+                matrixContainer.style.top = '0';
+                matrixContainer.style.left = '0';
+                matrixContainer.style.width = '100%';
+                matrixContainer.style.height = '100%';
+                matrixContainer.style.pointerEvents = 'none';
+                matrixContainer.style.zIndex = '-2';
+
+                for (let i = 0; i < 50; i++) {
+                    const rainDrop = document.createElement('div');
+                    rainDrop.style.position = 'absolute';
+                    rainDrop.style.left = Math.random() * 100 + '%';
+                    rainDrop.style.top = '-20px';
+                    rainDrop.style.color = '#00ff41';
+                    rainDrop.style.fontSize = '14px';
+                    rainDrop.style.fontFamily = 'monospace';
+                    rainDrop.style.opacity = '0.7';
+                    rainDrop.textContent = String.fromCharCode(0x30A0 + Math.random() * 96);
+                    rainDrop.style.animation = `matrixRain ${Math.random() * 10 + 5}s linear infinite`;
+                    rainDrop.style.animationDelay = Math.random() * 5 + 's';
+
+                    matrixContainer.appendChild(rainDrop);
+                }
+
+                document.body.appendChild(matrixContainer);
+            }
+
+            // Add CSS for Matrix rain animation
+            const style = document.createElement('style');
+            style.textContent = `
+            @keyframes matrixRain {
+                0% { transform: translateY(-20px); opacity: 0; }
+                10% { opacity: 0.7; }
+                90% { opacity: 0.3; }
+                100% { transform: translateY(100vh); opacity: 0; }
+            }
+        `;
+            document.head.appendChild(style);
+
+            // Initialize Matrix rain
+            createMatrixRain();
+        </script>
+    </div>
+</body>
+
+</html>

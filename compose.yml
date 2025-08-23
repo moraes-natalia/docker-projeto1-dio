@@ -1,0 +1,12 @@
+services:
+  apache-server:
+    image: httpd:2.4
+    container_name: meu-servidor-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./Website:/usr/local/apache2/htdocs/
+    restart: unless-stopped
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
