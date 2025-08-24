@@ -209,7 +209,7 @@ A solução implementada demonstrou ser uma **evolução significativa** do exer
 - **Conhecimento prático** em infraestrutura e deploy
 - **Diferencial competitivo** para o mercado de trabalho
 
-Esta abordagem foi desenvolvida como **implementação extra** ao exercício básico. A solução implementada é **altamente recomendada** para além dos requisitos mínimos desenvolver competências práticas em DevOps e Cloud Computing. Uma experiência completa de desenvolvimento até produção.
+Esta abordagem foi desenvolvida como **implementação extra** ao exercício básico. A solução implementada, além dos requisitos mínimos, desenvolve competências práticas em DevOps e Cloud Computing. Uma experiência completa de desenvolvimento até produção.
 
 ## Especificações Técnicas Finais
 
