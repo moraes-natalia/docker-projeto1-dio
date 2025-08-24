@@ -147,13 +147,12 @@ sudo chmod +x /usr/local/bin/docker-compose
 CONTAINER ID   IMAGE       COMMAND              STATUS          PORTS
 e26b43129285   httpd:2.4   "httpd-foreground"   Up 13 seconds   0.0.0.0:8080->80/tcp
 ```
+<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/ef399d5f-90bc-4fd1-8bbe-9516532fbd04" />
 
 ## Diagrama de Fluxo da Solução
 
 **Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, mostrando todas as etapas de transferência, configuração e deploy.
 <img width="3840" height="884" alt="Mermaid Chart - 02" src="https://github.com/user-attachments/assets/d2833809-41d0-4c86-a1a6-5df45d23f949" />
-<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/ef399d5f-90bc-4fd1-8bbe-9516532fbd04" />
-
 
 ## Resultados Alcançados
 
