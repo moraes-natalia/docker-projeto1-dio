@@ -150,16 +150,15 @@ e26b43129285   httpd:2.4   "httpd-foreground"   Up 13 seconds   0.0.0.0:8080->80
 
 ## Diagrama de Fluxo da Solução
 
-**Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, 
-mostrando todas as etapas de transferência, configuração e deploy.
-<img width="3840" height="884" alt="Mermaid Chart - 02" src="https://github.com/user-attachments/assets/74810ef2-072b-44af-97ad-a9326b254826" />
-```
+**Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, mostrando todas as etapas de transferência, configuração e deploy.
+
+<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/ef399d5f-90bc-4fd1-8bbe-9516532fbd04" />
+
 
 ## Resultados Alcançados
 
 ### Aplicação Final 
-
-<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/e97d71f3-81d1-48bb-b5ee-c94ff1bc110c" />
+<img width="3840" height="884" alt="Mermaid Chart - 02" src="https://github.com/user-attachments/assets/d2833809-41d0-4c86-a1a6-5df45d23f949" />
 **URL de Produção Ativa:** http://35.88.162.245:8080
 
 **Página HTML Renderizada:** A aplicação apresenta uma Landing Page de apresentação pessoal com design responsivo e informações técnico-profissionais organizadas.
