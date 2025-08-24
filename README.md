@@ -220,8 +220,6 @@ Esta abordagem foi desenvolvida como **implementação extra** ao exercício bá
 - **Conexão**: SSH com chaves criptográficas
 - **Transferência**: SCP (Secure Copy Protocol)
 - **Monitoramento**: Docker logs e AWS CloudWatch
-- **URL Produção**: http://35.88.162.245:8080
-- **Status**: ✅ Online e Operacional 24/7
 
 ---
 
