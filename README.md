@@ -25,7 +25,8 @@ Utilização de **Docker + AWS EC2 + Security Groups** como stack completa de pr
 3. **Configuração de Segurança**: Firewall e controle de acesso adequados
 
 ## Arquitetura da Solução
-<img width="3840" height="541" alt="Untitled diagram _ Mermaid Chart-2025-08-23-184554" src="https://github.com/user-attachments/assets/b446f6e6-5489-47fb-b1df-c4460d4a6e25" />
+<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/e97acb7d-8677-405f-949d-1fa3e7df5ff5" />
+
 
 ## Tecnologias Utilizadas
 
@@ -151,7 +152,8 @@ e26b43129285   httpd:2.4   "httpd-foreground"   Up 13 seconds   0.0.0.0:8080->80
 ## Diagrama de Fluxo da Solução
 
 **Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, mostrando todas as etapas de transferência, configuração e deploy.
-<img width="3840" height="541" alt="Untitled diagram _ Mermaid Chart-2025-08-23-184554" src="https://github.com/user-attachments/assets/7507d043-3bc0-4d68-ad4e-fa5f6b35b468" />
+<img width="3840" height="884" alt="Mermaid Chart - 02" src="https://github.com/user-attachments/assets/325bf97b-e92a-4cd5-957f-febd394c2814" />
+
 ```
 
 ## Resultados Alcançados
