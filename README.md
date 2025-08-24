@@ -53,10 +53,10 @@ A implementação inicial seguiu os requisitos básicos do exercício:
 
 ```
 docker-projeto1-dio/
-├── compose.yml          # Configuração Docker Compose
-├── Website/            # Pasta da aplicação web
-│   └── index.html      # Página HTML principal
-└── .git/              # Repositório Git (versionamento)
+├── compose.yml         
+├── Website/           
+│   └── index.html      
+└── .git/            
 ```
 
 ### Configuração Docker Compose
@@ -154,12 +154,8 @@ e26b43129285   httpd:2.4   "httpd-foreground"   Up 13 seconds   0.0.0.0:8080->80
 
 **Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, mostrando todas as etapas de transferência, configuração e deploy.
 ```
-Desenvolvimento Local ──(SCP)──→ AWS EC2 ──(Docker)──→ Internet
-     ↓                              ↓                    ↓
-• HTML + Compose              • Container Apache      • URL Pública
-• Git Repository              • Port 8080 Mapping     • 35.88.162.245:8080
-• Teste Local                 • Security Groups       • Acesso 24/7
-```
+<img width="3840" height="541" alt="Untitled diagram _ Mermaid Chart-2025-08-23-184554" src="https://github.com/user-attachments/assets/701a7515-4988-4b28-8eee-d9d6cb02aa05" />
+
 
 ## Resultados Alcançados
 
@@ -218,7 +214,7 @@ A solução implementada demonstrou ser uma **evolução significativa** do exer
 - **Conhecimento prático** em infraestrutura e deploy
 - **Diferencial competitivo** para o mercado de trabalho
 
-Esta abordagem foi desenvolvida como **implementação extra** ao exercício básico. A solução implementada é **altamente recomendada** para além dos requisitos mínimos desenvolver competências práticas em DevOps e Cloud Computing. Uma experiência completa de desenvolvimento até produção.
+Esta abordagem foi desenvolvida como **implementação extra** ao exercício básico. A solução implementada além dos requisitos mínimos desenvolver competências práticas em DevOps e Cloud Computing. Uma experiência completa de desenvolvimento até produção.
 
 ## Especificações Técnicas Finais
 
