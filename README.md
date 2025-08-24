@@ -24,10 +24,6 @@ Utilização de **Docker + AWS EC2 + Security Groups** como stack completa de pr
 2. **Infraestrutura Cloud**: Servidor dedicado na Amazon Web Services
 3. **Configuração de Segurança**: Firewall e controle de acesso adequados
 
-## Arquitetura da Solução
-<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/e97acb7d-8677-405f-949d-1fa3e7df5ff5" />
-
-
 ## Tecnologias Utilizadas
 
 - **Docker & Docker Compose**: Containerização da aplicação
@@ -52,10 +48,10 @@ A implementação inicial seguiu os requisitos básicos do exercício:
 
 ```
 docker-projeto1-dio/
-├── compose.yml         
-├── Website/           
-│   └── index.html      
-└── .git/            
+├── compose.yml          # Configuração Docker Compose
+├── Website/            # Pasta da aplicação web
+│   └── index.html      # Página HTML principal
+└── .git/              # Repositório Git (versionamento)
 ```
 
 ### Configuração Docker Compose
@@ -97,6 +93,7 @@ A implementação avançada incluiu deploy real na nuvem AWS:
 - **IP Público**: 35.88.162.245
 
 <br>
+
 ### Transferência de Arquivos via SCP
 
 Demonstração do processo de transferência dos arquivos do projeto local para a instância EC2 usando protocolo SCP seguro:
@@ -138,6 +135,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 <br>
 
+**Deploy da Aplicação na AWS:** Execução final do Docker Compose na instância EC2, mostrando o download da imagem Apache e a inicialização bem-sucedida do container em produção.
+
 ```bash
 [ec2-user@ip-172-31-29-241 docker-projeto1-dio]$ docker-compose up -d
 [+] Running 7/7
@@ -151,20 +150,19 @@ e26b43129285   httpd:2.4   "httpd-foreground"   Up 13 seconds   0.0.0.0:8080->80
 
 ## Diagrama de Fluxo da Solução
 
-**Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, mostrando todas as etapas de transferência, configuração e deploy.
-<img width="3840" height="884" alt="Mermaid Chart - 02" src="https://github.com/user-attachments/assets/325bf97b-e92a-4cd5-957f-febd394c2814" />
-
+**Arquitetura Visual:** Fluxo completo desde o desenvolvimento local até a produção na AWS, 
+mostrando todas as etapas de transferência, configuração e deploy.
+<img width="3840" height="884" alt="Mermaid Chart - 02" src="https://github.com/user-attachments/assets/74810ef2-072b-44af-97ad-a9326b254826" />
 ```
 
 ## Resultados Alcançados
 
 ### Aplicação Final 
-<img width="1673" height="311" alt="01" src="https://github.com/user-attachments/assets/1070601c-f17e-42a6-bc6e-ddfb15f53233" />
 
+<img width="1673" height="311" alt="Mermaid Chart - 01" src="https://github.com/user-attachments/assets/e97d71f3-81d1-48bb-b5ee-c94ff1bc110c" />
 **URL de Produção Ativa:** http://35.88.162.245:8080
 
 **Página HTML Renderizada:** A aplicação apresenta uma Landing Page de apresentação pessoal com design responsivo e informações técnico-profissionais organizadas.
-
 
 ### Comparação de Implementações
 
@@ -213,7 +211,7 @@ A solução implementada demonstrou ser uma **evolução significativa** do exer
 - **Conhecimento prático** em infraestrutura e deploy
 - **Diferencial competitivo** para o mercado de trabalho
 
-Esta abordagem foi desenvolvida como **implementação extra** ao exercício básico. A solução implementada além dos requisitos mínimos desenvolver competências práticas em DevOps e Cloud Computing. Uma experiência completa de desenvolvimento até produção.
+Esta abordagem foi desenvolvida como **implementação extra** ao exercício básico. A solução implementada é **altamente recomendada** para além dos requisitos mínimos desenvolver competências práticas em DevOps e Cloud Computing. Uma experiência completa de desenvolvimento até produção.
 
 ## Especificações Técnicas Finais
 
